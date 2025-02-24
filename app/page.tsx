@@ -1,3 +1,22 @@
+import { Html, Head, Main, NextScript } from 'next/document';
+
+export default function Document() {
+  return (
+    <Html lang="pt-BR">
+      <Head>
+        <meta name="description" content="Marketing na Blockchain - FlowOFF ajuda empresas a expandirem sua presença no digital com Web3 e inovação." />
+        <meta name="keywords" content="Web3, Blockchain, Marketing Digital, Flow360, Criação de Tokens, Tokenização" />
+        <meta name="author" content="FlowOFF" />
+        <title>FlowOFF - Marketing na Blockchain</title>
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
+}
+
 'use client';
 
 import { useEffect, useRef } from 'react';
