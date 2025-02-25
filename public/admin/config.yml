@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads" # Onde as imagens serão armazenadas
+public_folder: "/uploads"
+
+collections:
+  - name: "home"
+    label: "Home Page"
+    files:
+      - label: "Texto Principal"
+        name: "hero"
+        file: "app/page.tsx"
+        fields:
+          - {label: "Título", name: "title", widget: "string"}
+          - {label: "Descrição", name: "description", widget: "text"}
+          - {label: "Texto do Botão", name: "cta_text", widget: "string"}
+
+  - name: "images"
+    label: "Imagens"
+    files:
+      - label: "Logo"
+        name: "logo"
+        file: "public/images/logo.png"
+        fields:
+          - {label: "Arquivo", name: "image", widget: "image"}
