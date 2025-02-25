@@ -1,6 +1,8 @@
-'use client';
+"use client";
 
-import { Html, Head, Main, NextScript } from 'next/document';
+import { useEffect, useRef } from 'react';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 export default function Document() {
   return (
